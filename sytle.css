@@ -1,0 +1,271 @@
+@font-face {
+    font-family: ' Poppins';
+    src: url(fonts/Poppins.zip) format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #F5F5F5;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+}
+
+#header{
+    height: 11vh;
+    height: 84px;
+    background-color: white;
+    box-shadow: 0px -19px 35px black;
+}
+#nav{
+    display: flex;
+    align-items: center;
+}
+#logo{
+    margin: -1.2vh 10vw;
+}
+#navs{
+    margin-left: auto;
+    margin-right: 4vw;
+}
+.anchor{
+    margin: 0px ;
+    text-decoration: none;
+    font-size: 1.24em;
+    padding: 3px 24px;
+    color: #7A7A7A;
+}
+.anchor:hover{
+    background-color: #00CCFF;
+    color: white;
+}
+#center{
+    
+    margin: 40px 0px;
+    position: relative;
+}
+.cent{
+    display: flex;
+    justify-content: center;
+}
+#ico{
+    position: absolute;
+    right: 17.6vw;
+    top: 0.7vh;
+    cursor: pointer;
+    height:3vh;
+}
+#banner{
+    width: 88%;
+    margin: 4vh 0vw;
+    
+}
+#search{
+    padding: 9px 17px;
+    width: 66vw;
+    border: 1px solid rgb(168, 168, 168);
+    border-radius: 40px;
+    
+    top: 0;
+    right: 0;
+}
+#menu{
+    display: none;
+}
+#sep{
+    background-color: #00ccff2f;
+    display: flex;
+    justify-content: center;
+}
+#sep-2{
+    background-color: #00ccff2f;
+    display: flex;
+    justify-content: center;
+    margin: 3vw 0px;
+}
+#sep-3{
+    background-color: #00ccff2f;
+    margin: 3vw 0px;
+    height: 2vh;
+}
+#sep h1{
+    font-size: 3rem;
+}
+#sep-2 h1{
+    font-size: 2.4rem;
+}
+
+.img{
+    height: 24.2vw;
+    margin: 20px;
+}
+#clot{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-template-areas:"one two three four";
+    gap:  3vw;
+}
+.clothes{
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 0px 51px -44px black;
+    margin: 0vh 0.8vw;
+    margin-top: 3.4vh;
+    grid-column: one;
+    padding-bottom: 20px;
+}
+#clothes-2{
+    grid-column: two;
+}
+#clothes-3{
+    grid-column: three;
+}
+#clothes-4{
+    grid-area: four;
+}
+
+.one{
+    width: 67%;
+    margin-top: 7%;
+    padding: 1.3vw 1.4vw;
+    background-color: #F8A700;
+    color: white;
+    font-size: 1.4vw;
+    border: none;
+    border-radius: 49px;
+    cursor: pointer;
+}
+.one:hover{
+    background-color: #fdb524;
+    transform: scale(1.02,1.02);
+}
+
+.two{
+    cursor: pointer;
+    width: 67%;
+    padding: 1.3vw 1.4vw;
+    margin-top: 5.7%;
+    background-color: #00CCFF;
+    color: white;
+    font-size: 1.4vw;
+    border: none;
+    border-radius: 49px;
+}
+.two:hover{
+    background-color: #31d6ff;
+    transform: scale(1.02,1.02);
+}
+#logo-part{
+    width: 100%;
+    margin: 0px;
+    overflow: hidden;
+    height: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#logo-part img{
+    width: 84%;
+}
+#new{
+    width: 100% ;
+}
+#new img{
+    width: 100%;
+    margin: 7vh 0px;
+}
+#text{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#review{
+    padding: 7px 7px;
+}
+#text input{
+    margin: 4vh 0px;
+    padding: 0.8vh 1vw;
+    border: 1px solid rgba(0, 0, 0, 0.418);
+    border-radius: 4px;
+}
+#text button{
+    color: white;
+    padding: 0.7vh 2.4vw;
+    background-color: #00CCFF;
+    border: none;
+    border-radius: 49px;
+    cursor: pointer;
+    margin-bottom: 4vh;
+}
+body footer{
+    height: 7vh;
+    background-color: white;
+    box-shadow: 0px 19px 35px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body footer div p{
+    font-weight: lighter;
+}
+@media screen and (max-width:700px){
+    .none{
+        display: none;
+    }  
+    .anchor{
+    font-size: 1.1em;
+    padding: 0px;
+    margin: 1.24vw;
+    }
+    .anchor:hover{
+        background-color: white;
+        color:#7A7A7A ;
+    }
+    #banner{
+        width: 90%;
+        margin-top: 0vh;
+    }
+    #logo-part{
+        height: 14vh;
+    }
+    .img{
+        height: 24.2vh;
+    }
+    #clot{
+        grid-template-columns:0.84fr 0.84fr ;
+        grid-template-rows: 44vh 44vh;
+        grid-template-areas:"one two "
+                            "three four";
+        margin:0px 10px ;
+    }
+    .one{
+        font-size: 0.7rem;
+        padding: 10px 10px;
+        margin-top: 1px;
+    }
+    .two{
+        font-size: 0.7rem;
+        padding: 10px 0px;
+        margin-top: 10px;
+    }
+    #clothes-3{
+        margin-top: 0px;
+    }
+    #clothes-4{
+        margin-top: 0px;
+    }
+    #review{
+        width: 70%;
+        height: 17vh;
+    }
+}
